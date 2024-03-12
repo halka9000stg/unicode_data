@@ -43,5 +43,5 @@ extension BlockAnalysisCP on int{
 }
 extension BlockAnalysisString on String {
   Iterable<String> scanBlock() => this.runes.map<String>((int i) => i.scanBlock());
-  Iterable<bool> isInBlock({String? name}) => this.r
+  Iterable<bool> isInBlock({String? name}) => this.runes.map<bool>((int i) => i.isInBlock(name: name));
 }
